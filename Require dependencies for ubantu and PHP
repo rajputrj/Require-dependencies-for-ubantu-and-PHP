@@ -15,6 +15,7 @@ sudo apt-get install apache2
 
 sudo apt-get install mysql-server
 
+
 sudo apt-get update
 sudo apt -y install software-properties-common
 sudo add-apt-repository ppa:ondrej/php
@@ -34,3 +35,12 @@ For the server selection, choose apache2.
 Select yes when asked whether to use dbconfig-common to set up the database
 You will be prompted for your database administrator’s password
 You will then be asked to choose and confirm a password for the phpMyAdmin application itself
+
+
+install composer
+-------------------------
+curl -sS https://getcomposer.org/installer | php 
+
+sudo mv composer.phar /usr/local/bin/composer 
+
+chmod +x /usr/local/bin/composer 
