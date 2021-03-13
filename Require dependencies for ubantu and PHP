@@ -1,0 +1,37 @@
+Require dependencies for ubantu and PHP
+--------------------------------------
+First of all install chrome, sublime, skype then go for PHP:
+
+https://linuxize.com/post/how-to-install-sublime-text-3-on-ubuntu-18-04/
+
+----------------------------------------
+
+
+sudo apt-get update
+
+
+sudo apt-get install apache2
+
+
+sudo apt-get install mysql-server
+
+
+sudo apt-get update
+sudo apt -y install software-properties-common
+sudo add-apt-repository ppa:ondrej/php
+sudo apt-get update
+
+sudo apt -y install php7.4
+
+sudo apt-get install -y php7.4-{bcmath,bz2,intl,gd,mbstring,mysql,zip,common}
+
+
+sudo apt-get update
+
+sudo apt-get install phpmyadmin php-mbstring php-gettext
+
+Some points that we need to remember at the time fo phpmyadmin installation.
+For the server selection, choose apache2.
+Select yes when asked whether to use dbconfig-common to set up the database
+You will be prompted for your database administrator’s password
+You will then be asked to choose and confirm a password for the phpMyAdmin application itself
