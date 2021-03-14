@@ -23,7 +23,15 @@ sudo apt-get update
 
 sudo apt -y install php7.4
 
-sudo apt install php7.4-common php7.4-mysql php7.4-xml php7.4-xmlrpc php7.4-curl php7.4-gd php7.4-imagick php7.4-cli php7.4-dev php7.4-imap php7.4-mbstring php7.4-opcache php7.4-soap php7.4-zip php7.4-bz2 php7.4-intl -y
+sudo apt install php7.4-common php7.4-mysql php7.4-xml php7.4-xmlrpc php7.4-curl php7.4-gd php7.4-imagick php7.4-cli php7.4-dev php7.4-imap php7.4-mbstring php7.4-opcache php7.4-soap php7.4-zip php7.4-intl -y
+
+sudo apt install php7.4-bz2
+
+sudo apt-get update
+
+install composer
+-------------------------
+https://linuxize.com/post/how-to-install-and-use-composer-on-ubuntu-18-04/
 
 
 sudo apt-get update
@@ -37,10 +45,3 @@ You will be prompted for your database administrator’s password
 You will then be asked to choose and confirm a password for the phpMyAdmin application itself
 
 
-install composer
--------------------------
-curl -sS https://getcomposer.org/installer | php 
-
-sudo mv composer.phar /usr/local/bin/composer 
-
-chmod +x /usr/local/bin/composer 
