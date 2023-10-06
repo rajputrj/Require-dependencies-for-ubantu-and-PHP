@@ -63,6 +63,19 @@ Some points that we need to remember at the time fo phpmyadmin installation.
 For the server selection, choose apache2.
 Select yes when asked whether to use dbconfig-common to set up the database
 
+we encounter issues related to the root password
+
+sudo mysql -u root -p 
+
+and using the password set at installation 
+
+To update the password, use the following command:
+
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password by 'new_password';
+
+Replace 'new_password' with the desired new password.
+
+
 ---------- INSTALL SSL CERTIFICATE IN AWS  --------- 
 
 First install - the certbot plugin for apache
